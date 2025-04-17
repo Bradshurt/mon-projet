@@ -1,0 +1,106 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 40px 0 40px 0;
+    color: #0077c8;
+}
+
+.title-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form {
+    background: white;
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+    border-radius: 8px;
+    border: 1px solid #0077c8;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    margin-right: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .input-group input,
+  .input-group select,
+  .input-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #0077c8;
+    border-radius: 5px;
+  }
+
+  /* Pour la bordure et fond du champ actif */
+.color:focus {
+    border: 2px solid #132a6e; /* bleu nuit */
+    background-color: #eaffea;
+    outline: none; /* pour enlever la bordure bleue de base */
+}
+textarea:focus {
+    border: 2px solid #132a6e;
+    background-color: #eaffea;
+    outline: none;
+}
+  
+  /* Pour styliser le placeholder (même sans focus) */
+.color::placeholder {
+    color: #aaa;
+    transition: color 0.3s ease;
+}
+textarea::placeholder {
+    color: #aaa;
+    transition: color 0.3s ease;
+}
+  
+  /* Pour changer la couleur du placeholder UNIQUEMENT quand l'input est actif */
+.color:focus::placeholder {
+    color: #67addb;
+  }
+textarea:focus::placeholder {
+    color: #67addb;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+.button{
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #0077c8;
+    padding: 10px;
+    width: 150px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover{
+    background-color: #161B2C;
+}
+
+  .reset{
+    margin-right: 30px;
+
+  }
+  .submit{
+    margin-left: 30px;
+  }
