@@ -9,7 +9,8 @@
     if (isset($_GET['delete']) && is_numeric($_GET['delete'])) {
         $id = intval($_GET['delete']);
         $stmt = $conn->prepare("DELETE FROM contacts WHERE id = ?");
-        $stmt->bind_param("i", $id); $stmt->execute(); 
+        $stmt->bind_param("i", $id); 
+        $stmt->execute(); 
       } 
     // Récupération des données    
     $result = $conn->query("SELECT * FROM contacts"); 
@@ -50,7 +51,7 @@
               <a
                 class="delete-link"
                 href="?delete=<?= $row['id'] ?>"
-                onclick="return confirm('Supprimer ce message ?')"
+                onclick="return confirm('Voulez vous Supprimer ce message ?')"
                 >Supprimer</a
               >
             </td>

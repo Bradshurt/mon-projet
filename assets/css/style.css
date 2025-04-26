@@ -1,10 +1,9 @@
+
 main {
   display: flex;
   justify-content: center;
   flex-direction: column;
   height: 100%;
-  left: 0;
-  right: 0;
 }
 
 /* --------carousel page d'acceuille log angles------ */
@@ -84,9 +83,9 @@ main {
 /* --------style de la description de la ville-------- */
 
 .la-intro-section {
-  max-width: 900px;
+  width: 1000px;
   margin: 80px auto;
-  padding: 40px 25px;
+  padding: 15px 25px;
   background: linear-gradient(135deg, #fff, #f3f8fb);
   border-radius: 20px;
   box-shadow: 0 10px 40px rgba(0,0,0,0.08);
@@ -142,7 +141,7 @@ main {
 
 .carousel-track {
   display: flex;
-  transition: transform 1s ease-in-out, filter 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .carousel-image {
@@ -166,7 +165,10 @@ main {
   background: rgba(0, 0, 0, 0.4);
   color: white;
   border: none;
-  font-size: 2rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
   padding: 10px;
   cursor: pointer;
   z-index: 1;
@@ -179,13 +181,16 @@ main {
 .next-fly {
   right: 10px;
 }
+.carousel-btn-fly:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 
 
 /* --------css historique de la ville de los angeles-------- */
 
 .section-history {
   padding: 60px 20px;
-  background-color: #f5f5f5;
+  background-color: transparent;
   font-family: 'Poppins', sans-serif;
   color: #333;
   max-width: 900px;
@@ -247,42 +252,3 @@ main {
   opacity: 1;
   transform: translateY(0);
 }
-
-  /* ==== Styles par défaut (mode clair) ==== */
-  body {
-    background-color: #f3f6fa;
-    color: #222;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  /* Tu peux ajouter d’autres éléments comme .card, .header etc. */
-  header {
-    background-color: #0098F3;
-    color: white;
-  }
-  
-  .card {
-    background-color: white;
-    color: #333;
-  }
-  
-  /* ==== Mode sombre (via une classe sur <body>) ==== */
-  body.dark-mode {
-    background-color: #121212;
-    color: #e0e0e0;
-  }
-  
-  body.dark-mode header {
-    background-color: #1f1f1f;
-    color: #ffffff;
-  }
-  
-  body.dark-mode .card {
-    background-color: #1e1e1e;
-    color: #ddd;
-  }
-  
-  body.dark-mode footer {
-    background-color: #111;
-    color: #ccc;
-  }

@@ -1,0 +1,33 @@
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode header {
+    background-color: #1f1f1f;
+    color: #ffffff;
+  }
+  
+  body.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #ddd;
+    box-shadow: 0 8px 30px rgba(255, 255, 255, 0.05);
+    border: 1px solid #0098F3;
+  }
+  
+  body.dark-mode .card:hover {
+    box-shadow: 0 12px 40px rgba(255, 255, 255, 0.1);
+  }
+  
+  body.dark-mode .card-content h2 {
+    color: #66ccff; /* Bleu plus doux en mode sombre */
+  }
+  
+  body.dark-mode .card-content p {
+    color: #bbbbbb; /* Texte adouci */
+  }
+  
+  body.dark-mode footer {
+    background-color: #111;
+    color: #ccc;
+  }

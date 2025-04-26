@@ -1,0 +1,21 @@
+  /* ---- Mode sombre activé ---- */
+  .dark-mode .commerce-section {
+    background-color: #121212; /* Fond plus foncé */
+  }
+  
+  .dark-mode .section-title {
+    color: #66ccff; /* Bleu plus doux pour le titre */
+  }
+  
+  .dark-mode .commerce-card {
+    background-color: #1e1e1e; /* Cartes plus foncées */
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.05);
+  }
+  
+  .dark-mode .commerce-card h3 {
+    color: #e0e0e0; /* Titres en clair */
+  }
+  
+  .dark-mode .commerce-card p {
+    color: #bbbbbb; /* Texte secondaire plus doux */
+  }

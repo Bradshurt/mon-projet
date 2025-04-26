@@ -1,5 +1,5 @@
 <nav class="nav-bar">
-      <div class="nav-container">
+      <div class="nav-container nav-popup">
         <div class="nav-list">
           <a class="nav-link" href="../accueil.php">Accueil</a>
           <a class="nav-link" href="../pages/lieux.php">Lieux</a>
@@ -20,8 +20,12 @@
           <i class="fi fi-brands-tik-tok fi-social"></i>
           <i class="fi fi-brands-twitter fi-social"></i>
         </div>
-            <div class="mode">
-            <button class="button-style" id="darkModeToggle">🌙</button>
+        <div class="mode">
+          <button class="button-style" id="darkModeToggle">🌙</button>
+          <img class="menu" src="../assets/img/burger-bar.png" alt="ouvrir">
+          <!-- <img class="close" src="../assets/img/fermer-la-croix.png" alt="Fermer"> -->
         </div>
       </div>
 </nav>
+
+<script type="module" src="../assets/js/mode.js"></script>

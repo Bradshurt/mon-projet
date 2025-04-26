@@ -20,6 +20,7 @@ function resetTransition() {
 function nextSlide() {
   currentSlide++;
   goToSlide(currentSlide);
+
   track.addEventListener("transitionend", () => {
     if (currentSlide === slides.length - 1) {
       currentSlide = 1;
@@ -27,7 +28,7 @@ function nextSlide() {
     } 
   }, { once: true });
 }
-console.log("Current Slide:", currentSlide);
+// console.log("Current Slide:", currentSlide);
 
 function prevSlide() {
   currentSlide--;
@@ -40,6 +41,9 @@ function prevSlide() {
     } 
   }, { once: true });
 }
+
+window.prevSlide = prevSlide;
+window.nextSlide = nextSlide;
 
 // Auto défilement
 setInterval(() => {

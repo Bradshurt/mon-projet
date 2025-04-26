@@ -1,24 +1,28 @@
 .nav-bar {
   display: flex;
-  justify-content: center;
-  top: 0;
+  justify-content: space-between; /* Ou center si tu préfères */
+  align-items: center;
   position: sticky;
+  top: 0;
+  width: 100%; /* Important ! */
   background-color: #0098f3;
   z-index: 4;
+  padding: 0 20px; /* Pour éviter que le contenu colle au bord */
+  box-sizing: border-box;
 }
+
 .nav-container {
   display: flex;
-  flex-direction: row;
   flex: 1;
-  top: 0;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 .nav-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 200px 0 200px;
+  margin: 0; /* Supprimer le margin trop large */
 }
 .container-logo-text{
   display: flex;
@@ -33,7 +37,8 @@
   color: white;
 }
 .h2-logo{
-  width: 30px;
+  padding-top: 6px;
+  font-size: 30px;
   cursor: pointer;
   color: white;
 }
@@ -48,12 +53,10 @@
 
 .nav-list {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  gap: 10px;
   padding: 20px;
   font-size: 20px;
-  margin-right: 50px;
+  margin: 0; /* Supprimer le margin-right */
 }
 .nav-link {
   display: flex;
@@ -65,13 +68,12 @@
 }
 .social-media-icon {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  gap: 10px;
   align-items: center;
 }
 .fi-social {
   padding: 20px;
-  width: 15px;
+  font-size: 20px;
   cursor: pointer;
   color: white;
 }
@@ -79,6 +81,7 @@
 /* --------style css du bouton dark/white mode-------- */
 .mode{
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -111,4 +114,48 @@ body.dark-mode #darkModeToggle {
 
 body.dark-mode #darkModeToggle:hover {
   background-color: #555;
+}
+
+
+/* === MODE SOMBRE NAVBAR === */
+body.dark-mode .nav-bar {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode .nav-link,
+body.dark-mode .logo-text,
+body.dark-mode .h2-logo,
+body.dark-mode .social-media-logo,
+body.dark-mode .fi-social {
+  color: #f1f1f1;
+}
+
+body.dark-mode .nav-link:hover {
+  color: #67addb;
+}
+.dark-mode .fi-social:hover {
+  color: #67addb;
+}
+
+/* === MODE SOMBRE BOUTON DARK/WHITE === */
+body.dark-mode .button-style {
+  background-color: #444;
+  color: #f1f1f1;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .button-style:hover {
+  background-color: #666;
+}
+
+/* Tu peux aussi améliorer un peu l'effet d'ombre générale si tu veux */
+body.dark-mode .nav-bar,
+body.dark-mode .button-style {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.menu{
+  display: none;
+  padding-left: 6px;
+  width: 50px;
 }

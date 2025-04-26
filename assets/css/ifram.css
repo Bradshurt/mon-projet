@@ -1,13 +1,13 @@
 .map-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px;
-  }
-  .map-style {
-    width: 800px;
-    height: 500px;
-    border: none;
-    border-radius: 10px;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.map-style {
+  width: 1000px;
+  height: 600px;
+  border: none;
+  border-radius: 10px;
+  border: 1px solid #0098F3;
+}

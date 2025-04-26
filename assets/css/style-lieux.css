@@ -40,43 +40,4 @@
     font-size: 1rem;
     color: #444;
   }
-
-  /* ==== Styles par défaut (mode clair) ==== */
-body {
-    background-color: #f3f6fa;
-    color: #222;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  /* Tu peux ajouter d’autres éléments comme .card, .header etc. */
-  header {
-    background-color: #0098F3;
-    color: white;
-  }
-  
-  .card {
-    background-color: white;
-    color: #333;
-  }
-  
-  /* ==== Mode sombre (via une classe sur <body>) ==== */
-  body.dark-mode {
-    background-color: #121212;
-    color: #e0e0e0;
-  }
-  
-  body.dark-mode header {
-    background-color: #1f1f1f;
-    color: #ffffff;
-  }
-  
-  body.dark-mode .card {
-    background-color: #1e1e1e;
-    color: #ddd;
-  }
-  
-  body.dark-mode footer {
-    background-color: #111;
-    color: #ccc;
-  }
   

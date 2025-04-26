@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/ifram.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/mode-sombre-acceuil.css" />
     <?php include "./includes/link.php"?>
     <title>los angeles</title>
   </head>
@@ -13,39 +14,43 @@
 
     <main class="container">
       <div class="carousel">
-        <div class="carousel-slide" id="slide">
+        <div class="carousel-slide" id="carousel-slide">
           <div class="overlay">
             <h1 id="carousel-titre"></h1>
             <p id="carousel-text"></p>
           </div>
         </div>
-        <button class="carousel-btn prev-fly" onclick="prevSlide()">
+        <button class="carousel-btn prev-fly yan" onclick="prevSlide1()">
           &#10094;
         </button>
-        <button class="carousel-btn next-fly" onclick="nextSlide()">
+        <button class="carousel-btn next-fly" onclick="nextSlide1()">
           &#10095;
         </button>
       </div>
+
       <div class="la-intro-section">
         <h2 class="la-title">Bienvenue à Los Angeles</h2>
         <p class="la-subtitle">Plus qu’une ville, une légende vivante.</p>
-      
+
         <div class="la-description">
           <p>
-            Los Angeles, c’est ce frisson que tu ressens au premier regard. Des avenues infinies baignées de soleil, des plages où le sable rencontre les rêves, et un ciel si vaste qu’il semble embrasser l’océan.  
+            Los Angeles, c’est ce frisson qui te percute dès que ton regard se pose sur elle. Des avenues sans fin brûlées par le soleil, des plages où le sable se mêle aux rêves, et un ciel tellement immense qu’on dirait qu’il vient enlacer l’océan.
           </p>
           <p>
-            Ici, chaque coin de rue raconte une histoire. Les lettres blanches d’Hollywood veillent sur une ville qui a vu naître les plus grands artistes, des films cultes, des musiques inoubliables. Mais L.A., c’est aussi Venice Beach et ses artistes de rue, Santa Monica et son coucher de soleil doré, ou encore les palmiers dansants de Beverly Hills.
+            Ici, chaque coin de rue te balance une histoire. Les lettres géantes d’Hollywood veillent sur une ville qui a vu naître des légendes, des films cultes, des sons qui font vibrer le monde entier. Mais LA, ce n’est pas que du cinéma : c’est Venice Beach avec ses artistes de rue déjantés, Santa Monica sous un ciel en feu au coucher du soleil, et les palmiers de Beverly Hills qui ondulent comme dans un rêve.  
           </p>
           <p>
-            Dans cette ville aux mille visages, les cultures s’entrelacent, les food trucks parfument les trottoirs, et la créativité explose à chaque coin de mur. Que tu sois passionné d’art, de technologie, de skate ou de gastronomie, Los Angeles a quelque chose pour toi.
+            À LA, les cultures se mélangent comme nulle part ailleurs. Les food trucks font danser les odeurs dans les rues, et la créativité jaillit sur chaque mur, à chaque coin de quartier. Que tu sois fan d’art, mordu de tech, rider de skate ou amoureux de bonne bouffe, Los Angeles a forcément un bout de rêve taillé juste pour toi.
           </p>
           <p class="la-final-line">
-            ✨ Laisse-toi emporter. Los Angeles t’attend. Pas seulement pour être visitée, mais pour être ressentie.
+            Qu'est-ce que t'attends ? Los Angeles, c'est pas juste une ville à
+            visiter, c'est un endroit à vivre, à respirer, à ressentir jusqu'au
+            bout des rêves. Ici, chaque rue, chaque coucher de soleil te raconte
+            une histoire. LA, c'est une vibe, une énergie… et crois-moi, tu veux
+            en faire partie.
           </p>
         </div>
       </div>
-      
 
       <div class="map-container">
         <iframe
@@ -60,15 +65,15 @@
         <div class="carousel-container">
           <div class="carousel-track" id="carousel-track">
             <!-- Clones à gauche -->
-            <img src="assets/img/img3.jpg" class="carousel-image" />
+            <img src="assets/img/Urban-buildings.jpg" class="carousel-image" />
 
             <!-- Slides réels -->
-            <img src="assets/img/img1.jpg" class="carousel-image" />
-            <img src="assets/img/img2.jpg" class="carousel-image" />
-            <img src="assets/img/img3.jpg" class="carousel-image" />
+            <img src="assets/img/shot-with-drone.jpg" class="carousel-image" />
+            <img src="assets/img/Urban-city-sunrise.jpg" class="carousel-image" />
+            <img src="assets/img/Urban-buildings.jpg" class="carousel-image" />
 
             <!-- Clones à droite -->
-            <img src="assets/img/img1.jpg" class="carousel-image" />
+            <img src="assets/img/shot-with-drone.jpg" class="carousel-image" />
           </div>
           <button class="carousel-btn-fly prev-fly" onclick="prevSlide()">
             &#10094;
@@ -140,7 +145,7 @@
     </main>
     <?php include "./includes/footer.php"?>
 
-    <script type="module" src="./assets/js/carousel.js"></script>
+    <script src="./assets/js/carousel.js?v=1.0"></script>
     <script type="module" src="./assets/js/carousel-fly.js"></script>
     <script type="module" src="./assets/js/history.js"></script>
     <script type="module" src="../assets/js/mode.js"></script>
