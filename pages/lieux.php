@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include "../includes/link.php"?>
     <link rel="stylesheet" href="../assets/css/style-lieux.css" />
     <link rel="stylesheet" href="../assets/css/mode-sombre-lieux.css" />
@@ -67,6 +69,7 @@
     </main>
 
     <?php include "../includes/footer.php"?>
+
     <script type="module" src="../assets/js/mode.js"></script>
   </body>
 </html>
