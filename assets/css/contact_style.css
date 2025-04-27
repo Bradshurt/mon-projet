@@ -79,6 +79,7 @@ textarea:focus::placeholder {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    gap: 20px;
   }
 
 .button{
@@ -96,11 +97,3 @@ textarea:focus::placeholder {
 .button:hover{
     background-color: #161B2C;
 }
-
-  .reset{
-    margin-right: 30px;
-
-  }
-  .submit{
-    margin-left: 30px;
-  }

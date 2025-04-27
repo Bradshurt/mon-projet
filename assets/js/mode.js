@@ -11,3 +11,9 @@ toggle.addEventListener('click', () => {
   }
 });
 
+const menuButton = document.getElementById('menuButton');
+const navList = document.querySelector('.nav-list');
+
+menuButton.addEventListener('click', () => {
+  navList.classList.toggle('show'); // Ajoute ou supprime la classe "show"
+});

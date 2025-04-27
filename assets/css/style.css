@@ -80,6 +80,29 @@ main {
 .next {
   right: 20px;
 }
+
+
+/* -----------about-section---------- */
+
+  
+.about-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+color: #0098F3;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 /* --------style de la description de la ville-------- */
 
 .la-intro-section {
@@ -184,7 +207,6 @@ main {
 .carousel-btn-fly:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
 
 /* --------css historique de la ville de los angeles-------- */
 

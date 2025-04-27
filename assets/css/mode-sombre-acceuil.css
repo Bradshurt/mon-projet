@@ -64,6 +64,20 @@ body.dark-mode .carousel-btn:hover {
   background-color: rgba(255, 255, 255, 0.5);
   color: black;
 }
+
+/* Mode sombre pour about-section */
+body.dark-mode .about-section {
+  background-color: #161B2C; /* Couleur de fond sombre */
+  color: #f9f9f9; /* Couleur du texte clair */
+}
+
+body.dark-mode .about-section h2 {
+  color: #4FC3F7; /* Couleur du titre */
+}
+
+body.dark-mode .about-section p {
+  color: #B0BEC5; /* Couleur du texte descriptif */
+}
   
   /* DESCRIPTION DE LA VILLE */
 .dark-mode .la-intro-section {

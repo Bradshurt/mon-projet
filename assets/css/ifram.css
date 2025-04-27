@@ -1,13 +1,42 @@
 .map-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
+
+.map-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #0098F3;
+}
+
+.map-container p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
 .map-style {
   width: 1000px;
   height: 600px;
   border: none;
   border-radius: 10px;
   border: 1px solid #0098F3;
+}
+
+/* === Responsive pour les tablettes et téléphones === */
+@media (max-width: 768px) {
+  .map-style {
+    width: 90%; /* Prend 90% de la largeur de l'écran */
+    height: 400px; /* Réduit la hauteur */
+  }
+}
+
+@media (max-width: 480px) {
+  .map-style {
+    width: 100%; /* Prend toute la largeur de l'écran */
+    height: 300px; /* Réduit encore la hauteur */
+  }
 }

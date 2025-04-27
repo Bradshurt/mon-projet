@@ -1,0 +1,85 @@
+/* === Responsive pour les tablettes (max-width: 768px) === */
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px; /* Réduit le padding */
+    margin: 20px 0; /* Réduit les marges */
+    max-width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-form{
+    display: flex;
+    text-align: center;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%; /* Prend 90% de la largeur de l'écran */
+    padding: 15px; /* Réduit le padding interne */
+  }
+
+  .input-group {
+    margin-bottom: 10px; /* Réduit l'espacement entre les champs */
+  }
+
+  .input-group input,
+  .input-group select,
+  .input-group textarea {
+    font-size: 0.9rem; /* Réduit la taille du texte */
+  }
+
+  .form-buttons {
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* Les boutons s'affichent en colonne */
+    justify-content: center;
+    gap: 10px; /* Ajoute un espacement entre les boutons */
+  }
+
+  .button {
+    width: 80%; /* Les boutons prennent toute la largeur */
+    padding: 8px; /* Réduit le padding */
+  }
+
+
+  .submit{
+    margin-left: 30px;
+  }
+  .reset{
+    margin-left: 30px;
+  }
+}
+
+/* === Responsive pour les téléphones (max-width: 480px) === */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px; /* Réduit encore le padding */
+    margin: 10px 0; /* Réduit encore les marges */
+  }
+
+  .form {
+    width: 100%; /* Prend toute la largeur de l'écran */
+    padding: 10px; /* Réduit encore le padding interne */
+  }
+
+  .input-group input,
+  .input-group select,
+  .input-group textarea {
+    font-size: 0.8rem; /* Réduit encore la taille du texte */
+  }
+
+  .form-buttons {
+    gap: 8px; /* Réduit l'espacement entre les boutons */
+  }
+
+  .button {
+    font-size: 0.9rem; /* Réduit la taille du texte des boutons */
+    padding: 6px; /* Réduit encore le padding */
+  }
+}

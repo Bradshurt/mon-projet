@@ -3,20 +3,21 @@
     const slides = [
       {
         image: "assets/img/img1.jpg",
-        title: "Au cœur du cinéma mondial",
-        text: "Hollywood n’est pas qu’un nom, c’est un mythe vivant où naissent les stars et où chaque rue a son histoire à raconter.",
+        title: "L’âme de Hollywood",
+        text: "Ici, chaque étoile sur le trottoir cache une histoire folle. Hollywood, c’est pas juste du cinéma, c’est un rêve qui palpite dans chaque ruelle.",
       },
       {
         image: "assets/img/img2.jpg",
-        title: "Los Angeles, entre ciel et mer",
-        text: "Une ville où chaque coucher de soleil embrase l’horizon, et où la modernité flirte avec le rêve californien.",
+        title: "Entre vagues et gratte-ciel",
+        text: "À LA, le soleil se couche dans l'océan comme un feu d’artifice silencieux. C’est une ville où la liberté et la démesure dansent ensemble.",
       },
       {
         image: "assets/img/img3.jpg",
-        title: "Au cœur du cinéma mondial",
-        text: "Hollywood n’est pas qu’un nom, c’est un mythe vivant où naissent les stars et où chaque rue a son histoire à raconter.",
+        title: "La magie au coin de la rue",
+        text: "Grandir à Los Angeles, c’est voir des histoires naître à chaque coin de rue — un clip de rap ici, un tournage là-bas, toujours un rêve en marche.",
       },
     ];
+    
 
     let currentSlide = 0;
     const slide = document.getElementById("carousel-slide");

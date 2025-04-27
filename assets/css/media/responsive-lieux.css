@@ -1,0 +1,39 @@
+@media (max-width: 768px) {
+  .card-container {
+    gap: 15px; /* Réduit l'espacement entre les cartes */
+    padding: 15px;
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 15px); /* 2 cartes par ligne */
+  }
+
+  .card-content h2 {
+    font-size: 1.3rem; /* Réduit la taille du titre */
+  }
+
+  .card-content p {
+    font-size: 0.9rem; /* Réduit la taille du texte */
+  }
+}
+
+/* === Responsive pour les téléphones (max-width: 480px) === */
+@media (max-width: 480px) {
+  .card-container {
+    flex-direction: column; /* Les cartes s'affichent en colonne */
+    gap: 10px; /* Réduit encore l'espacement */
+    padding: 10px;
+  }
+
+  .card {
+    flex: 1 1 100%; /* Une seule carte par ligne */
+  }
+
+  .card-content h2 {
+    font-size: 1.2rem; /* Réduit davantage la taille du titre */
+  }
+
+  .card-content p {
+    font-size: 0.8rem; /* Réduit davantage la taille du texte */
+  }
+}

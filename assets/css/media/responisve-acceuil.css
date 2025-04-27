@@ -1,0 +1,224 @@
+/* === Responsive pour le carousel principal === */
+@media (max-width: 768px) {
+    .carousel {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+  
+    .carousel-slide {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: background-image 1s ease-in-out;
+      background-blend-mode: darken;
+    }
+
+    .overlay { 
+      position: absolute;
+      top: 50%;
+      left: 30%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+      color: white;
+      z-index: 2;
+      box-sizing: border-box;
+    }
+
+    .overlay-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    
+    .overlay h1 {
+      margin-top: 50px;
+      width: 300px;
+      font-size: 16px;
+
+    }
+    .overlay p {
+      width: 300px;
+      font-size: 12px;
+    }
+
+    
+    .carousel-btn {
+      position: absolute;
+      top: 40%;
+      transform: translateY(-50%);
+      background-color: rgba(11, 10, 10, 0.1);
+      border: none;
+      color: white;
+      font-size: 2rem;
+      padding: 10px 15px;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      z-index: 1;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel {
+      height: 50vh; /* Réduit encore la hauteur pour les très petits écrans */
+    }
+  
+    .carousel-btn {
+      font-size: 1rem;
+      padding: 6px 10px;
+    }
+  }
+
+  /* === Responsive pour les petits écrans === */
+@media (max-width: 768px) {
+    .carousel-btn {
+      padding: 8px;
+      font-size: 1rem;
+    }
+  }
+  
+  
+  /* === Responsive pour les petits écrans === */
+  @media (max-width: 768px) {
+    .about-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .about-section p {
+      font-size: 1rem;
+      padding: 0 10px;
+    }
+  }
+
+  /* === Responsive pour les tablettes (max-width: 768px) === */
+@media (max-width: 768px) {
+    .la-intro-section {
+      width: 90%; /* Réduit la largeur */
+      padding: 15px; /* Réduit les marges internes */
+    }
+  
+    .la-title {
+      font-size: 2rem; /* Réduit la taille du titre */
+    }
+  
+    .la-subtitle {
+      font-size: 1.3rem; /* Réduit la taille du sous-titre */
+    }
+  
+    .la-description p {
+      font-size: 1rem; /* Réduit la taille du texte */
+      margin-bottom: 10px; /* Réduit l'espacement entre les paragraphes */
+    }
+  
+    .la-final-line {
+      font-size: 1.1rem; /* Réduit la taille de la ligne finale */
+    }
+  }
+  
+  /* === Responsive pour les téléphones (max-width: 480px) === */
+  @media (max-width: 480px) {
+    .la-intro-section {
+      width: 95%; /* Prend presque toute la largeur de l'écran */
+      padding: 10px; /* Réduit encore les marges internes */
+    }
+  
+    .la-title {
+      font-size: 1.8rem; /* Réduit davantage la taille du titre */
+    }
+  
+    .la-subtitle {
+      font-size: 1.2rem; /* Réduit davantage la taille du sous-titre */
+    }
+  
+    .la-description p {
+      font-size: 0.9rem; /* Réduit encore la taille du texte */
+      line-height: 1.4; /* Réduit l'espacement entre les lignes */
+    }
+  
+    .la-final-line {
+      font-size: 1rem; /* Réduit encore la taille de la ligne finale */
+    }
+  }
+
+  /* === Responsive pour le carousel "Vue du ciel" === */
+@media (max-width: 768px) {
+    .carousel-container {
+      width: 100vw; /* Prend toute la largeur de l'écran */
+      height: auto; /* Ajuste la hauteur automatiquement */
+      overflow: hidden; /* Cache les débordements */
+      margin: 0; /* Supprime les marges */
+      padding: 0; /* Supprime les paddings */
+    }
+  
+    .carousel-image {
+      width: 100%; /* Les images prennent toute la largeur */
+      height: auto; /* Conserve les proportions */
+      object-fit: cover; /* Ajuste les images pour qu'elles remplissent le conteneur */
+    }
+  
+    .carousel-btn-fly {
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel-container {
+      height: 200px; /* Réduit encore la hauteur */
+    }
+  
+    .carousel-btn-fly {
+      width: 25px;
+      height: 25px;
+      font-size: 14px;
+    }
+  }
+
+  /* === Responsive pour la section "Historique de la ville" === */
+@media (max-width: 768px) {
+    .section-history {
+      padding: 40px 15px; /* Réduit les marges internes */
+    }
+  
+    .history-header h2 {
+      font-size: 2rem; /* Réduit la taille du titre */
+    }
+  
+    .history-header p {
+      font-size: 1rem; /* Réduit la taille du texte */
+    }
+  
+    .history-content .history-block {
+      padding: 15px; /* Réduit les marges internes des blocs */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .history-header h2 {
+      font-size: 1.8rem;
+    }
+  
+    .history-header p {
+      font-size: 0.9rem;
+    }
+  
+    .history-content .history-block {
+      padding: 10px;
+    }
+  }

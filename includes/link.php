@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="../assets/css/general-style.css" />
 <link rel="stylesheet" href="../assets/css/header.css" />
-<link rel="stylesheet" href="../assets/css/media/mediaquery-header.css" />
+<link rel="stylesheet" href="../assets/css/media/mediaquery-header.css"/>
 <link rel="stylesheet" href="../assets/css/footer.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

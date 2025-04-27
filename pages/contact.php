@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/contact_style.css">
     <link rel="stylesheet" href="../assets/css/mode-sombre-contact.css">
+    <link rel="stylesheet" href="../assets/css/media/responisve-contact.css">
     <?php include "../includes/link.php"?>
     <title>Contact</title>
 </head>
@@ -49,8 +50,8 @@
             </div>
 
             <div class="form-buttons">
-                <input class="reset button" type="reset" value="Annuler" />
                 <input class="submit button" type="submit" value="Envoyer" />
+                <input class="reset button" type="reset" value="Annuler" />
             </div>
         </form>
 

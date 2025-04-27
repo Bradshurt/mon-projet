@@ -13,6 +13,7 @@
             <h2 class="logo-text">ANGELES</h2>
           </div>
         </div>
+
         <div class="social-media-icon">
           <i class="fi fi-brands-facebook fi-social"></i>
           <i class="fi fi-brands-instagram fi-social"></i>
@@ -22,8 +23,9 @@
         </div>
         <div class="mode">
           <button class="button-style" id="darkModeToggle">🌙</button>
-          <img class="menu" src="../assets/img/burger-bar.png" alt="ouvrir">
-          <!-- <img class="close" src="../assets/img/fermer-la-croix.png" alt="Fermer"> -->
+        </div>
+        <div class="menu" id="menuButton">
+          <i class="fi fi-rr-menu-burger"></i>
         </div>
       </div>
 </nav>
