@@ -7,7 +7,7 @@
       display: none; /* Cache la liste par défaut */
       flex-direction: column;
       position: absolute;
-      top: 60px; /* Ajustez en fonction de la hauteur de la barre */
+      top: 60px; 
       right: 0;
       background-color: #0098f3;
       width: 100%;

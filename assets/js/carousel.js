@@ -2,7 +2,7 @@
   document.addEventListener("DOMContentLoaded", () => {
     const slides = [
       {
-        image: "assets/img/img1.jpg",
+        image: "assets/img/hollywood_P.jpg",
         title: "L’âme de Hollywood",
         text: "Ici, chaque étoile sur le trottoir cache une histoire folle. Hollywood, c’est pas juste du cinéma, c’est un rêve qui palpite dans chaque ruelle.",
       },
